@@ -27,6 +27,8 @@ python "$SKILL_DIR/scripts/flowdot.py" render \
 
 Inspect the route preview before rendering. Check every route's centreline, endpoints and direction at full resolution. Correct the JSON if any overlay cuts a corner, crosses a label, or follows the wrong connector. Preview markings are diagnostic only; they do not appear in the GIF.
 
+The preview's route-ID labels may overlap nearby artwork. Compare the original beside the preview when reading node text; do not move a correct path merely to reposition a diagnostic label.
+
 If the user requested animation, proceed after this inspection. If the user requested preview only or explicitly asked to approve it first, show that exact preview and wait. Do not impose the original NGINX template's approval gate on unrelated images.
 
 Use a new output filename for revisions. `--force` explicitly replaces an existing output, but cannot overwrite the source image or config. Never modify the source to remove stationary dots without permission; explain that existing dots will remain in the artwork.

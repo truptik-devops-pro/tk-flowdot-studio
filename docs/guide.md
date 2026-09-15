@@ -46,6 +46,12 @@ Check the overlay against the real line:
 
 For a curve, add more points wherever straight segments visibly depart from the line. Split junctions into independent routes. A crossing is not necessarily a connection.
 
+Here is the bundled demo's diagnostic overlay. Its coloured vertices and route labels are preview aids and do not appear in the exported animation.
+
+Route-ID labels are positioned near path starts and can cover nearby node text. Keep the original image alongside the preview to read that text. This does not affect the final GIF.
+
+![Measured route overlay for the straight, bent and curved demo connectors](../examples/routes-preview.png)
+
 ## 4. Tune the movement
 
 The default 30 ms frame delay gives 33.33 frames/s. A 12 px dot moving at 200 px/s advances 6 px per frame, producing overlapping positions. Increase dot size or lower speed when motion looks jumpy.
