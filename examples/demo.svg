@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#18283f"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M2 1 L7 5 L2 9" fill="none" stroke="#6a85a3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1200" height="800" fill="#091321"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <path d="M56 57 H86 L105 38" fill="none" stroke="#43e8bd" stroke-width="3"/>
+    <circle cx="72" cy="57" r="7" fill="#43e8bd"/>
+    <text x="121" y="65" fill="#e9f2fb" font-size="27" font-weight="700">FlowDot Studio</text>
+    <rect x="938" y="34" width="206" height="40" rx="20" fill="#13302e" stroke="#235348"/>
+    <text x="1041" y="60" text-anchor="middle" fill="#63eccc" font-size="15" font-weight="700" letter-spacing="1.2">IMAGE TO GIF</text>
+    <text x="56" y="141" fill="#f6f9ff" font-size="49" font-weight="700" letter-spacing="-1.5">Give your diagrams a sense of flow.</text>
+    <text x="58" y="182" fill="#a0b4cb" font-size="22">Your image stays still. The dots tell the story.</text>
+
+    <rect x="56" y="224" width="1088" height="146" rx="20" fill="#111f32" stroke="#24384f"/>
+    <text x="83" y="263" fill="#43e8bd" font-size="13" font-weight="700" letter-spacing="2">01 / STRAIGHT</text>
+    <text x="83" y="301" fill="#edf3fc" font-size="24" font-weight="700">Request flow</text>
+    <text x="83" y="331" fill="#8fa7c2" font-size="16">Follow the arrow.</text>
+    <text x="398" y="262" fill="#9fb3cc" font-size="16">Client</text>
+    <text x="1010" y="262" fill="#9fb3cc" font-size="16" text-anchor="end">Service</text>
+    <path d="M408 302 H1008" stroke="#6a85a3" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <circle cx="394" cy="302" r="13" fill="#112b2b" stroke="#43e8bd" stroke-width="2"/>
+    <rect x="1029" y="289" width="26" height="26" rx="7" fill="#112b2b" stroke="#43e8bd" stroke-width="2"/>
+
+    <rect x="56" y="390" width="1088" height="158" rx="20" fill="#111f32" stroke="#24384f"/>
+    <text x="83" y="431" fill="#90b5ff" font-size="13" font-weight="700" letter-spacing="2">02 / BENT</text>
+    <text x="83" y="469" fill="#edf3fc" font-size="24" font-weight="700">Pipeline steps</text>
+    <text x="83" y="499" fill="#8fa7c2" font-size="16">Keep speed through turns.</text>
+    <text x="398" y="431" fill="#9fb3cc" font-size="16">Build</text>
+    <text x="1010" y="431" fill="#9fb3cc" font-size="16" text-anchor="end">Deploy</text>
+    <path d="M408 464 H658 V504 H1008" stroke="#6a85a3" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <circle cx="394" cy="464" r="13" fill="#1a2943" stroke="#90b5ff" stroke-width="2"/>
+    <rect x="1029" y="491" width="26" height="26" rx="7" fill="#1a2943" stroke="#90b5ff" stroke-width="2"/>
+
+    <rect x="56" y="568" width="1088" height="158" rx="20" fill="#111f32" stroke="#24384f"/>
+    <text x="83" y="609" fill="#ffbd80" font-size="13" font-weight="700" letter-spacing="2">03 / CURVED</text>
+    <text x="83" y="647" fill="#edf3fc" font-size="24" font-weight="700">Event delivery</text>
+    <text x="83" y="677" fill="#8fa7c2" font-size="16">Trace the actual centreline.</text>
+    <text x="398" y="609" fill="#9fb3cc" font-size="16">Producer</text>
+    <text x="1010" y="609" fill="#9fb3cc" font-size="16" text-anchor="end">Consumer</text>
+    <path d="M408 658 C588 574 828 742 1008 658" stroke="#6a85a3" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <circle cx="394" cy="658" r="13" fill="#352a25" stroke="#ffbd80" stroke-width="2"/>
+    <rect x="1029" y="645" width="26" height="26" rx="7" fill="#352a25" stroke="#ffbd80" stroke-width="2"/>
+    <text x="58" y="768" fill="#8ba3bf" font-size="16">MEASURED PATHS</text>
+    <circle cx="258" cy="762" r="3" fill="#43e8bd"/>
+    <text x="278" y="768" fill="#8ba3bf" font-size="16">CONSTANT SPEED</text>
+    <circle cx="481" cy="762" r="3" fill="#90b5ff"/>
+    <text x="501" y="768" fill="#8ba3bf" font-size="16">STATIC ARTWORK</text>
+    <text x="1143" y="768" text-anchor="end" fill="#91a8c3" font-size="16">by Trupti Kolekar</text>
+  </g>
+</svg>
