@@ -86,6 +86,26 @@ Open `output/demo.gif`. Existing output files are protected; choose a new filena
 
 The self-contained skill lives in [`skills/tk-flowdot-studio`](skills/tk-flowdot-studio). Keep its instructions, script, requirements and reference together.
 
+### GitHub CLI
+
+With a GitHub CLI version that supports the preview `gh skill` commands, install for Codex at user scope:
+
+```bash
+gh skill install truptik-devops-pro/tk-flowdot-studio tk-flowdot-studio --agent codex --scope user
+```
+
+See the [GitHub CLI installation reference](https://cli.github.com/manual/gh_skill_install) for other agent destinations and version pinning. Runtime requirements below still apply.
+
+### Skills CLI
+
+You can also discover and install the skill through the [Skills CLI](https://skills.sh/docs/cli):
+
+```bash
+npx skills add truptik-devops-pro/tk-flowdot-studio
+```
+
+Choose your agent when prompted. This installs the skill files; install Python, Pillow and FFmpeg separately as described in [Quick start](#quick-start).
+
 ### Codex
 
 Ask Codex's skill installer:

@@ -1,5 +1,6 @@
 ---
 name: tk-flowdot-studio
+license: MIT
 description: Use when animating arrows, connector lines, or paths in an existing diagram image with moving flow dots and exporting a GIF. Supports measured straight and bent paths, plus curves traced as closely spaced points, while keeping the original artwork still.
 ---
 
