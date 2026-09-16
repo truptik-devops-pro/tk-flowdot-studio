@@ -1,6 +1,6 @@
 <div align="center">
 
-# FlowDot Studio
+# TK FlowDot Studio
 
 ### Give your diagrams a sense of flow.
 
@@ -8,12 +8,12 @@ Turn the arrows and lines in a static image into a moving-dot GIF.<br>
 Built for architecture diagrams, pipelines, workflows and technical explainers.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-43e8bd?style=flat-square&labelColor=111f32)](LICENSE)
-[![Agent Skill](https://img.shields.io/badge/Agent_Skill-SKILL.md-90b5ff?style=flat-square&labelColor=111f32)](skills/flowdot-studio/SKILL.md)
+[![Agent Skill](https://img.shields.io/badge/Agent_Skill-SKILL.md-90b5ff?style=flat-square&labelColor=111f32)](skills/tk-flowdot-studio/SKILL.md)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-ffbd80?style=flat-square&labelColor=111f32)](#quick-start)
 
-[Quick start](#quick-start) · [Install the skill](#install-the-skill) · [Map your image](docs/guide.md) · [Configuration](skills/flowdot-studio/references/config.md)
+[Quick start](#quick-start) · [Install the skill](#install-the-skill) · [Map your image](docs/guide.md) · [Configuration](skills/tk-flowdot-studio/references/config.md)
 
-![FlowDot Studio demo: teal, blue and orange dots move along straight, bent and curved connectors while the diagram stays still.](examples/demo.gif)
+![TK FlowDot Studio demo: teal, blue and orange dots move along straight, bent and curved connectors while the diagram stays still.](examples/demo.gif)
 
 **Your image stays still. The dots tell the story.**
 
@@ -51,11 +51,11 @@ This is AI-assisted mapping with deterministic rendering. The script does not au
 You need **Python 3.10+** and **FFmpeg on PATH**. Install FFmpeg using your operating system's package manager, for example `brew install ffmpeg` on macOS or `sudo apt install ffmpeg` on Ubuntu. See [FFmpeg downloads](https://ffmpeg.org/download.html) for other platforms.
 
 ```bash
-git clone https://github.com/truptik-devops-pro/flowdot-studio.git
-cd flowdot-studio
+git clone https://github.com/truptik-devops-pro/tk-flowdot-studio.git
+cd tk-flowdot-studio
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r skills/flowdot-studio/requirements.txt
+python -m pip install -r skills/tk-flowdot-studio/requirements.txt
 ffmpeg -version
 mkdir -p output
 ```
@@ -65,7 +65,7 @@ On Windows PowerShell, use `py -m venv .venv` and `.venv\Scripts\Activate.ps1` i
 **Preview the demo's measured routes:**
 
 ```bash
-python skills/flowdot-studio/scripts/flowdot.py preview \
+python skills/tk-flowdot-studio/scripts/flowdot.py preview \
   --image examples/demo.png \
   --config examples/demo.json \
   --output output/routes-preview.png
@@ -74,7 +74,7 @@ python skills/flowdot-studio/scripts/flowdot.py preview \
 **Convert the demo image to a GIF:**
 
 ```bash
-python skills/flowdot-studio/scripts/flowdot.py render \
+python skills/tk-flowdot-studio/scripts/flowdot.py render \
   --image examples/demo.png \
   --config examples/demo.json \
   --output output/demo.gif
@@ -84,7 +84,7 @@ Open `output/demo.gif`. Existing output files are protected; choose a new filena
 
 ## Install the skill
 
-The self-contained skill lives in [`skills/flowdot-studio`](skills/flowdot-studio). Keep its instructions, script, requirements and reference together.
+The self-contained skill lives in [`skills/tk-flowdot-studio`](skills/tk-flowdot-studio). Keep its instructions, script, requirements and reference together.
 
 ### Codex
 
@@ -92,23 +92,23 @@ Ask Codex's skill installer:
 
 ```text
 Use $skill-installer to install the skill from
-https://github.com/truptik-devops-pro/flowdot-studio/tree/main/skills/flowdot-studio
+https://github.com/truptik-devops-pro/tk-flowdot-studio/tree/main/skills/tk-flowdot-studio
 ```
 
 Restart or refresh your agent's skill discovery after installing. The Python environment still needs Pillow and FFmpeg as described above.
 
-For a manual install from this repository, copy the complete skill folder into `~/.agents/skills/flowdot-studio`, checking that it does not already exist. This is Codex's documented user-level skills location. See [OpenAI's local skill documentation](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills).
+For a manual install from this repository, copy the complete skill folder into `~/.agents/skills/tk-flowdot-studio`, checking that it does not already exist. This is Codex's documented user-level skills location. See [OpenAI's local skill documentation](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills).
 
 ### Other agents
 
-For agents that support the [Agent Skills format](https://agentskills.io/specification), copy the whole `skills/flowdot-studio` directory into that agent's documented skills location. Shell execution, image inspection, Python and FFmpeg are required. Loading `SKILL.md` alone does not install runtime dependencies. Agent-specific compatibility beyond Codex has not been tested.
+For agents that support the [Agent Skills format](https://agentskills.io/specification), copy the whole `skills/tk-flowdot-studio` directory into that agent's documented skills location. Shell execution, image inspection, Python and FFmpeg are required. Loading `SKILL.md` alone does not install runtime dependencies. Agent-specific compatibility beyond Codex has not been tested.
 
 ### Then ask
 
 Attach your diagram, or provide its local file path:
 
 ```text
-Use $flowdot-studio to animate the arrows in this image.
+Use $tk-flowdot-studio to animate the arrows in this image.
 Use teal flow dots moving toward the arrowheads.
 Keep all text, icons and the background unchanged.
 Inspect the route preview, then export the GIF and route JSON.
@@ -123,7 +123,7 @@ For preview only, add: `Show me the route preview and wait before rendering.`
 3. Inspect the route preview at the original resolution. Correct any line, bend or direction that is wrong.
 4. Render the GIF and inspect it at the size where you will share it.
 
-Start with the [practical guide](docs/guide.md), then use the [configuration reference](skills/flowdot-studio/references/config.md) for exact field names. The demo includes its [source SVG](examples/demo.svg), [PNG](examples/demo.png) and [route JSON](examples/demo.json).
+Start with the [practical guide](docs/guide.md), then use the [configuration reference](skills/tk-flowdot-studio/references/config.md) for exact field names. The demo includes its [source SVG](examples/demo.svg), [PNG](examples/demo.png) and [route JSON](examples/demo.json).
 
 ## Honest limits
 
@@ -143,6 +143,6 @@ Tests exercise geometry, input validation, file protection and actual GIF output
 
 ## About
 
-Created by [Trupti Kolekar](https://github.com/truptik-devops-pro) to make technical diagrams easier to explain. FlowDot Studio generalizes the constant-speed, measured-centreline motion technique from her original NGINX animation workflow. The demo artwork is original and the reusable skill contains no fixed NGINX layout or branding.
+Created by [Trupti Kolekar](https://github.com/truptik-devops-pro) to make technical diagrams easier to explain. TK FlowDot Studio generalizes the constant-speed, measured-centreline motion technique from her original NGINX animation workflow. The demo artwork is original and the reusable skill contains no fixed NGINX layout or branding.
 
 Released under the [MIT License](LICENSE).

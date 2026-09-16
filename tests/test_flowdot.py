@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw
 
 
 REPO = Path(__file__).resolve().parents[1]
-SCRIPT = REPO / "skills" / "flowdot-studio" / "scripts" / "flowdot.py"
+SCRIPT = REPO / "skills" / "tk-flowdot-studio" / "scripts" / "flowdot.py"
 SPEC = importlib.util.spec_from_file_location("flowdot", SCRIPT)
 flowdot = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None

@@ -6,7 +6,7 @@ The best result begins with a clean image and a well-measured route. This guide 
 
 Use a static PNG or JPEG with clear connector lines. Export vector diagrams at the exact pixel size you want to share. Small source text will still be small in the GIF. Keep a separate original.
 
-If your source has transparency, place it on your intended background before rendering if you do not want white. FlowDot Studio flattens transparency onto white. It will preserve any large stationary dots already in the artwork.
+If your source has transparency, place it on your intended background before rendering if you do not want white. TK FlowDot Studio flattens transparency onto white. It will preserve any large stationary dots already in the artwork.
 
 ## 2. Map one route first
 
@@ -24,7 +24,7 @@ For an 800 by 400 example, a line might start at `(100,140)`, turn at `(380,140)
 }
 ```
 
-Save this as `routes.json` only after replacing the example dimensions and points with measurements from your image. See the [full configuration contract](../skills/flowdot-studio/references/config.md).
+Save this as `routes.json` only after replacing the example dimensions and points with measurements from your image. See the [full configuration contract](../skills/tk-flowdot-studio/references/config.md).
 
 **With the skill:** ask the assistant to inspect the image and generate this JSON for you. Review its route overlay before trusting those measurements.
 
@@ -33,7 +33,7 @@ Save this as `routes.json` only after replacing the example dimensions and point
 From the repository root with your Python environment active:
 
 ```bash
-python skills/flowdot-studio/scripts/flowdot.py preview \
+python skills/tk-flowdot-studio/scripts/flowdot.py preview \
   --image diagram.png --config routes.json --output routes-preview.png
 ```
 
@@ -71,7 +71,7 @@ Speed is distance per second. A longer route takes longer to traverse at the sam
 ## 5. Render and inspect
 
 ```bash
-python skills/flowdot-studio/scripts/flowdot.py render \
+python skills/tk-flowdot-studio/scripts/flowdot.py render \
   --image diagram.png --config routes.json --output diagram-flow.gif
 ```
 

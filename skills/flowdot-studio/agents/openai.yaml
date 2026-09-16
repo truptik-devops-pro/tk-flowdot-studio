@@ -1,4 +1,0 @@
-interface:
-  display_name: "FlowDot Studio"
-  short_description: "Animate diagram lines with precise moving flow dots"
-  default_prompt: "Use $flowdot-studio to animate the arrows in this image with moving dots, preserve the artwork, and export a verified GIF."
